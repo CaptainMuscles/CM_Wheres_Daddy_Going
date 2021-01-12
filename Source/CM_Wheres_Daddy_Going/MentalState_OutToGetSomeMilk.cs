@@ -100,6 +100,23 @@ namespace CM_Wheres_Daddy_Going
             }
         }
 
+        public override void PostEnd()
+        {
+            base.PostEnd();
+
+            MindCleared();
+        }
+
+        public void MindCleared()
+        {
+            if (pawn.SpawnedOrAnyParentSpawned)
+            {
+                Logger.MessageFormat(this, "Clearing memory of state.");
+                WheresDaddyGoingMod.Instance.MemoriesOfDad.RemoveParent(pawn);
+            }
+            Logger.MessageFormat(this, "Ending state.");
+        }
+
         public override string GetBeginLetterText()
         {
             string baseLetter = "";

@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using HarmonyLib;
+using RimWorld;
 using Verse;
 
 namespace CM_Wheres_Daddy_Going
@@ -12,8 +13,8 @@ namespace CM_Wheres_Daddy_Going
 
         public WheresDaddyGoingMod(ModContentPack content) : base(content)
         {
-            //var harmony = new Harmony("CM_Wheres_Daddy_Going");
-            //harmony.PatchAll();
+            var harmony = new Harmony("CM_Wheres_Daddy_Going");
+            harmony.PatchAll();
 
             _instance = this;
         }

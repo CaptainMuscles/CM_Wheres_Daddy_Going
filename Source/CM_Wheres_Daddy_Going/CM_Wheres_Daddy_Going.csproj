@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MentalStateHandlerPatches.cs" />
     <Compile Include="WheresDaddyDefOf.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="ParentalMemory.cs" />

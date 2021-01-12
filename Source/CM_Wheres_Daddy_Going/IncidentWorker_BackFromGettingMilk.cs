@@ -134,11 +134,6 @@ namespace CM_Wheres_Daddy_Going
             ThingDef thingDef = memoriesOfDad.WhatIsParentGetting(parent);
             bool? didTheyGetIt = memoriesOfDad.DidParentGetTheThing(parent);
 
-            if (didTheyGetIt.HasValue && didTheyGetIt.Value == true)
-                TaleRecorder.RecordTale(WheresDaddyDefOf.CM_Wheres_Daddy_Going_Tale_Returning_With_Milk, parent, child, thingDef);
-            else
-                TaleRecorder.RecordTale(WheresDaddyDefOf.CM_Wheres_Daddy_Going_Tale_Returning_Without_Milk, parent, child, thingDef);
-
             if (parent.gender == Gender.None)
             {
                 // Should be impossible, but hey
@@ -163,7 +158,16 @@ namespace CM_Wheres_Daddy_Going
                 SendStandardLetter(title, text, LetterDefOf.PositiveEvent, parms, parent);
             }
 
-            
+            if (didTheyGetIt.HasValue && didTheyGetIt.Value == true)
+            {
+                memoriesOfDad.RemoveParent(parent);
+                TaleRecorder.RecordTale(WheresDaddyDefOf.CM_Wheres_Daddy_Going_Tale_Returning_With_Milk, parent, child, thingDef);
+            }
+            else
+            {
+                TaleRecorder.RecordTale(WheresDaddyDefOf.CM_Wheres_Daddy_Going_Tale_Returning_Without_Milk, parent, child, thingDef);
+            }
+
             return true;
         }
 
