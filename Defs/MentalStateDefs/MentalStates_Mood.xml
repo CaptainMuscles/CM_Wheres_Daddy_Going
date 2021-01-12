@@ -6,23 +6,27 @@
     <mentalState>CM_Wheres_Daddy_Going_MentalState_OutToGetSomeMilk</mentalState>
     <intensity>Extreme</intensity>
     <baseCommonality>1</baseCommonality>
+	<workerClass>CM_Wheres_Daddy_Going.MentalBreakWorker_OutToGetSomeMilk</workerClass>
   </MentalBreakDef>
     <MentalBreakDef>
     <defName>CM_Wheres_Daddy_Going_MentalBreak_OutToGetSomeMilk_Major</defName>
     <mentalState>CM_Wheres_Daddy_Going_MentalState_OutToGetSomeMilk</mentalState>
     <intensity>Major</intensity>
     <baseCommonality>1</baseCommonality>
+	<workerClass>CM_Wheres_Daddy_Going.MentalBreakWorker_OutToGetSomeMilk</workerClass>
   </MentalBreakDef>
   <MentalBreakDef>
     <defName>CM_Wheres_Daddy_Going_MentalBreak_OutToGetSomeMilk_Minor</defName>
     <mentalState>CM_Wheres_Daddy_Going_MentalState_OutToGetSomeMilk</mentalState>
     <intensity>Minor</intensity>
     <baseCommonality>1</baseCommonality>
+	<workerClass>CM_Wheres_Daddy_Going.MentalBreakWorker_OutToGetSomeMilk</workerClass>
   </MentalBreakDef>
   <MentalStateDef ParentName="BaseMentalState">
     <defName>CM_Wheres_Daddy_Going_MentalState_OutToGetSomeMilk</defName>
     <label>leaving to go get something</label>
     <stateClass>CM_Wheres_Daddy_Going.MentalState_OutToGetSomeMilk</stateClass>
+	<workerClass>CM_Wheres_Daddy_Going.MentalStateWorker_OutToGetSomeMilk</workerClass>
     <category>Misc</category>
     <prisonersCanDo>false</prisonersCanDo>
     <moodRecoveryThought>Catharsis</moodRecoveryThought>
