@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Where's Daddy Going?</name>
+	<author>Captain Muscles (Nathan Harbour)</author>
+	<packageId>CaptainMuscles.WheresDaddyGoing</packageId>
+	<url>https://github.com/CaptainMuscles/CM_Wheres_Daddy_Going</url>
+	<supportedVersions>
+		<li>1.2</li>
+	</supportedVersions>
+	<description>Sometimes daddy gets stressed out. Sometimes he goes out to get some milk and clear his head and he's gone for a long time...</description>
+	<modDependencies/>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+	</loadAfter>
+</ModMetaData>
