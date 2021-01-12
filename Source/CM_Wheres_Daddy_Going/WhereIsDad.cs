@@ -74,7 +74,14 @@ namespace CM_Wheres_Daddy_Going
 
         public Pawn RandomParent()
         {
-            return parentalMemories.RandomElement().pawn;
+            if (parentalMemories.Count > 0)
+            {
+                ParentalMemory memory = parentalMemories.RandomElement();
+                if (memory != null)
+                    return memory.pawn;
+            }
+
+            return null;
         }
 
         public void RemoveParent(Pawn parent)
