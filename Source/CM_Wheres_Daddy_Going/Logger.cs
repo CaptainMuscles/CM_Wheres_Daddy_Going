@@ -8,7 +8,7 @@ namespace CM_Wheres_Daddy_Going
     {
         public static bool WriteMeeseeksInfoToInspector = true;
 
-        public static bool MessageEnabled = true;
+        public static bool MessageEnabled = false;
         public static bool WarningEnabled = true;
         public static bool ErrorEnabled = true;
 
