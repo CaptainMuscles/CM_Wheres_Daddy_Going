@@ -117,7 +117,7 @@ namespace CM_Wheres_Daddy_Going
             Logger.MessageFormat(this, "Ending state.");
         }
 
-        public override string GetBeginLetterText()
+        public override TaggedString GetBeginLetterText()
         {
             string baseLetter = "";
             if (child == null || pawn.gender == Gender.None)
